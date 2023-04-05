@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="log-reg.css" rel="stylesheet">  
+    <title>Login and Registration Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+
+  	<div class="outer">		
+
+
+  			<div class="form-log">
+		
+				<h1>Login</h1>
+  				<div class="line"></div>
+  			
+
+  				<form action="#" class="inner">
+  					
+  					<div class="input-wht">
+  						<label>Email</label>
+  						<input type="email" name="name" required>  						
+  						<i class='bx bx-envelope'></i>
+  					</div>
+  				
+  					<div class="input-blk">
+  						<label>Password</label>
+  						<input type="Password" name="name" required>
+  						
+  						<i class='bx bx-lock-alt'></i>			
+
+  					</div>
+  					
+  					
+  					<button type="submit" class="btn">Login</button> 					
+
+  				</form>
+
+  					<p>Don't have an Account <a href="#" class="login">Register </a></p>
+  					<button type="submit" class="btn">Login with Gamil</button> 
+  				<button type="submit" class="btn">Login with Facebook</button> 
+ 		 </div>
+ 		
+
+ 	
+
+			<div class="form-reg">
+			
+				<h1>Restration</h1>
+  				<div class="line"></div>
+  			
+
+  				<form action="#">
+  					<div class="input-blk">
+  						<label>Name</label>
+  						<input type="text" name="name" required>
+  					
+  						<i class='bx bx-user'></i>
+  					</div>
+  					<div class="input-wht">
+  						<label>Email</label>
+  						<input type="email" name="name" required>
+  						
+  						<i class='bx bx-envelope'></i>
+  					</div>
+  					<div class="input-blk">
+  						<label>Age</label>
+  						<input type="text" name="name" required>
+  						
+  						<i class='bx bx-message-rounded-dots'></i>
+  					</div>
+  					<div class="input-wht">
+  						<label>Password</label>
+  						<input type="Password" name="name" required>
+  						
+  						<i class='bx bx-lock-alt'></i>
+  					</div>
+  					<div class="input-blk">
+  						<label>Moblie</label>
+  						<input type="text" name="name" required>
+  						
+  						<i class='bx bxs-mobile'></i>
+  					</div>
+
+  					<div class="input-wht">
+  						<label>Qualification</label>
+  						<input type="text" name="name" required>
+  						<label>Qualification</label>
+  						<i class='bx bx-envelope'></i>
+  					</div>
+
+  					<div class="input-gender">
+  						<span>Gender</span>
+  						<input type="radio" name="name" ><label>Male</label>
+  						<input type="radio" name="name" ><label>Female</label>
+  						<input type="radio" name="name"><label>other</label>
+  						
+  						<i class='bx bx-male-female'></i>
+  					</div>
+
+  					
+  					<div class="address">
+  						<label>Address</label>
+  						<textarea cols="20" rows="4"></textarea>  					
+  						<i class='bx bxs-city'></i>
+  					</div>
+
+  					<div class="option">
+  						<label>Study Medium</label>
+  						<select>
+  							
+  							<option>Tamil</option>
+  							<option>English</option>
+  							<option>Malayalam</option>
+  							<option>Hindi</option>
+  						
+  						</select>
+  						<i class='bx bxs-gift'></i>
+  					</div>
+  					<button type="submit" class="btn">Register</button> 					
+
+  				</form>
+  					<p>Already have an Account <a href="#" class="register">Login</a></p>
+  					<button type="submit" class="btn">Login with Gamil</button> 
+  					<button type="submit" class="btn">Login with Facebook</button> 
+			</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	const head=document.querySelector('.outer');
+	const log_head = document.querySelector ('.form-log');
+	const log = document.querySelector('.login');
+	const reg_head = document.querySelector('.form-reg');
+	const reg = document.querySelector("register");
+
+	log.onclick = () => {
+		log_head.classList.add('active');
+		reg_head.classList.add('active');
+
+	};
+
+	reg.onclick = () => {
+		reg_head.classList.remove('active');
+		log_head.classList.remove('active');
+	};
+
+	
+	
+
+</script>
+
+
+
+
+  </body>
+  </html>

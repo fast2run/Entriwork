@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Poppins:ital,wght@0,300;0,400;0,600;1,100;1,500;1,700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root{
+	--font-color:white;
+	--font-pop:'Poppins', sans-serif;
+	--font-lily: 'Lily Script One', cursive;
+
+}
+body{
+	background: #424040;
+	padding-top:25px;
+	font-family:var(--font-pop) ;
+
+}
+.outer{
+	width: 550px;
+	height: 580px;
+	background: black;
+	/*backdrop-filter: blur(15px);*/
+	border: 2px solid #f296c7;
+	border-radius: 15px;
+	box-shadow: -5px 5px 12px;
+	margin:auto;	
+	
+
+}
+
+
+.form-reg{
+	display: flex;
+	
+
+	flex-direction: column;
+	
+	padding-top: 15px;
+	opacity: 0;
+}
+.form-reg.active{
+	opacity: 1;
+}
+
+
+
+.form-reg h1{
+	color:white;
+	text-align: center;
+	font-family: var(--font-lily);
+	
+
+}
+.form-reg .line{
+	text-align: center;
+	width: 100%;
+	height: 4px;
+	background:  #f296c7;
+	
+
+
+}
+
+
+
+.form-reg .input-blk{
+position: relative;
+background: white;
+width: 100%;
+height: 35px;
+
+}
+.form-reg .input-blk input{
+	background: transparent;
+
+	position: absolute;
+	width: 45%;
+	height: 30px;
+	margin-top: 2px;
+	color: black;
+	transform: translateX(160px);
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	
+}
+.form-reg .input-blk label{
+	color:black;
+	position: absolute;
+	transform: translateX(5px);
+	margin-top: 3.5px;
+	font-size: 20px;
+}
+.form-reg .input-blk i{
+	color:black;
+	position: absolute;	
+	right: 0;
+	transform: translateX(-75px);
+	font-size: 23px;
+	margin-top: 3.5px;
+}
+
+.form-reg .input-wht{
+	position: relative;
+	background: black;
+	width: 100%;
+	height: 35px;
+
+}
+
+.form-reg .input-wht input{
+	background: transparent;
+	
+	position: absolute;
+	width: 45%;
+	height: 30px;
+	margin-top: 2px;
+	color: white;
+	transform: translateX(160px);
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	
+}
+.form-reg .input-wht label{
+	color:white;
+	position: absolute;
+	transform: translateX(5px);
+	margin-top: 3.5px;
+	font-size: 20px;
+}
+.form-reg .input-wht i{
+	color:white;
+	position: absolute;	
+	right: 0;
+	transform: translateX(-75px);
+	font-size: 23px;
+	margin-top: 3.5px;
+}
+
+
+
+
+/*  Gender */
+.form-reg .input-gender{
+
+position: relative;
+background: white;
+width: 100%;
+height: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+
+}
+.form-reg .input-gender span{
+	position: absolute;
+	font-size: 20px;
+	color: black;
+	left: 0;
+	transform: translateX(5px);
+
+}
+.form-reg .input-gender i{
+	position: absolute;
+	font-size: 25px;
+	color: black;
+	right: 0;
+	transform: translateX(-75px);
+
+}
+.form-reg .input-gender label{
+	color:black;
+}
+
+/*.form-reg .input-gender span{
+	color:white;
+	position: absolute;
+	transform: translateX(35px);
+	margin-top: 3.5px;
+	font-size: 20px;
+}
+.form-reg .input-gender input{
+	transform: translateX(px);
+}
+.form-reg .input-gender label{
+	transform: translateX(10px);
+}*/
+.address{
+	background: black;
+	width: 100%;
+	height: 75px;
+	text-align: center;
+	
+	
+}
+.form-reg .address label{
+	position: absolute;
+	font-size: 20px;
+	color: white;
+	left: 0;
+	transform: translateX(373px);
+	text-align: center;
+	margin-top:15px;
+	
+
+}
+.address textarea{
+
+	border: none;
+	resize: none;
+	outline: none;
+	border-bottom: 1px solid white;	
+	background: transparent;
+	color: white;
+	width: 45%;
+}
+
+.address i{
+	position: absolute;
+	font-size: 25px;
+	color: white;
+	right: 0;
+	transform: translateX(-444.4px);
+	margin-top:15px;
+	
+	
+}
+.option{
+	position: relative;
+	background: white	;
+	width: 100%;
+	height: 35px;
+	text-align: center;	
+
+}
+.option select{
+	width: 45%;
+	height: 25px;
+	margin-top: 3.5px;
+}
+.option label{
+	color:black;
+	font-size: 20px;
+	position: absolute;
+	left: 0;
+	transform: translateX(5px);
+}
+.option i{
+	font-size: 25px;
+	position: absolute;
+	right: 0;
+	transform: translateX(-75px);
+
+}
+
+.form-reg .btn{
+	width: 100%;
+	height: 25px;
+	border-radius: 25px;
+	border: 1px solid #f296c7;	
+	margin-top: 15px;
+	cursor: pointer;
+
+}
+
+.form-reg p{
+	color: white;
+	text-align: center;
+
+}
+.form-reg p a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.form-reg p a:hover{
+	
+border-bottom: 1px solid white;
+border-radius: 12px;
+background: white;
+color: black;
+}
+
+/*   login page */
+
+
+
+.form-log{
+	display: flex;
+
+	flex-direction: column;
+	padding-top: 15px;
+
+}
+.form-log.active{
+	display: none;
+}
+
+
+
+
+
+.form-log h1{
+	color:white;
+	text-align: center;
+	font-family: var(--font-lily);
+	
+
+}
+.form-log .line{
+	text-align: center;
+	width: 100%;
+	height: 4px;
+	background:  #f296c7;
+}
+
+.inner{
+	margin-top: 20%;
+
+}
+
+.form-log .input-blk{
+position: relative;
+background: white;
+width: 100%;
+height: 35px;
+
+margin-top: 15px;
+
+
+}
+.form-log .input-blk input{
+	background: transparent;
+
+	position: absolute;
+	width: 45%;
+	height: 30px;
+	margin-top: 2px;
+	color: black;
+	transform: translateX(160px);
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	
+}
+.form-log .input-blk label{
+	color:black;
+	position: absolute;
+	transform: translateX(5px);
+	margin-top: 3.5px;
+	font-size: 20px;
+}
+.form-log .input-blk i{
+	color:black;
+	position: absolute;	
+	right: 0;
+	transform: translateX(-75px);
+	font-size: 23px;
+	margin-top: 3.5px;
+}
+
+.form-log .input-wht{
+	position: relative;
+	background: black;
+	width: 100%;
+	height: 35px;
+
+
+}
+
+.form-log .input-wht input{
+	background: transparent;
+	
+	position: absolute;
+	width: 45%;
+	height: 30px;
+	margin-top: 2px;
+	color: white;
+	transform: translateX(160px);
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	
+}
+.form-log .input-wht label{
+	color:white;
+	position: absolute;
+	transform: translateX(5px);
+	margin-top: 3.5px;
+	font-size: 20px;
+}
+.form-log .input-wht i{
+	color:white;
+	position: absolute;	
+	right: 0;
+	transform: translateX(-75px);
+	font-size: 23px;
+	margin-top: 3.5px;
+}
+.form-log .btn{
+	width: 100%;
+	height: 35px;
+	border-radius: 25px;
+	border: 1px solid #f296c7;	
+	margin-top: 25px;
+	cursor: pointer;
+}
+
+.form-log p{
+	color: white;
+	text-align: center;
+	margin-top: 25px;
+}
+.form-log p a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.form-log p a:hover{
+	
+border-bottom: 1px solid white;
+border-radius: 12px;
+background: white;
+color: black;
+}
