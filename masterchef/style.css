@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(128, 255, 204,.6);
+    width: 100%;
+    height: 100vh;
+
+}
+h1,h2,h3{
+    color:blue
+}
+.dark-theme{
+    background-color: black;
+    color: white;   
+}
+header{
+    width: 100%;
+    height: 50px;
+    background:rgb(128, 255, 204,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 35px;
+
+}
+.logo{
+    font-size: 35px;
+    padding-left: 25px;
+}
+.mode{
+    font-size: 25px;
+}
+.bx-sun{
+    padding-right: 10px;
+    cursor: pointer;
+}
+#moon{
+    cursor: pointer;
+}
+.info{
+    text-align: center;
+    padding-top: 10px;
+}
+.main{
+    padding-top: 12px;
+    width: 100%;
+    height: 550px;
+    
+    display: flex;
+}
+.main .ltbox{
+    width: 50%;
+    height: 100%;
+    
+}
+.main .rtbox{
+    width: 50%;
+    height: 100%;
+    
+}
+.main .ltbox ul{
+    list-style-position: inside;
+}
+.ltbox h2{
+    padding-left: 10px;
+}
+
+.main .ltbox ul li{
+    font-size: 20px;
+    
+    
+    padding-left: 50px;   
+
+}
+.rtbox img{
+
+    
+    height: 200px;
+    position: absolute;
+    right: 220px;
+    padding-top: 15px;
+}
+.rtbox h3{
+    text-align: center;
+}
+.rtbox h2{
+    margin-bottom: 10px;
+}
+.rtbox p{
+    margin-bottom: 15px;
+}
+.container{
+    padding-top: 100px;
+    width: 750px;
+    height: 450px;
+    
+    margin: auto;
+}
+.formarea{
+      
+    position: relative;
+    left: 25%;
+    padding-top: 12px;
+    padding-bottom: 12px; 
+    
+       
+}
+.inputfield{
+    position: relative;
+    padding: 12px 0;
+    
+}
+.inputfield input{
+    width:35% ;
+    height: 30px;
+    border: 1px solid blue;
+    outline: none;
+    border-radius: 15px;
+}
+.inputfield textarea{
+    resize: none;
+    width: 35%;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid blue;
+    
+}
+.inputfield label{
+    margin-left: 15px;
+    font-size: 25px;
+}
+.inputfield .textarea{
+    font-size: 25px;
+    transform: translateY(20px);
+    position: absolute;
+}
+.formarea button{
+    cursor: pointer;
+    width: 15%;
+    height: 30px;
+    border-radius: 12px;
+
+    border: 1px solid blue;
+}
