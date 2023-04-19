@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:wght@100;300;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1200px;
+    height: auto;
+    background:black;
+    margin: auto;
+  
+}
+/* Header part start*/
+.home-container{
+    height: 100vh;  
+    background:#4dff4d;  
+}
+
+.home-container .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background: #00b300;
+    padding: 15px;  
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    
+}
+.home-container .menu ul li{
+    display: inline;
+    padding: 0 25px;
+}
+.home-container .logo{
+    font-size: 28px;
+    cursor: pointer;
+    color:#004d00;
+   
+}
+.home-container .logo:hover{
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+.home-container .title{
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.home-container .title span{
+    color:#4dff4d;
+}
+.home-container ul{
+    list-style: none;
+}
+.home-container ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#004d00;
+    position: relative;
+}
+/*.home-container .menu ul li a:hover{
+    color: 
+    border-bottom: 1px solid #4dff4d;
+}
+*/
+.home-container .menu ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color:#4dff4d;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+.home-container .menu ul li a:hover::after{
+    width: 100%;
+}
+
+/* header part ends */
+
+/*home part start */
+
+.home-container .title2{
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.home-container .title2 h1 span{
+    color:green;
+    cursor: pointer;
+}
+.home-container .img{
+    width: 100%;
+    height: 450px;
+ 
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:10px
+    
+}
+.home-container .img img{
+    width: 75%;
+    height: 220px;
+    
+}
+.img img:nth-child(odd){
+    padding-left: 45px;
+}
+    
+/* plant Section*/
+.plantsec{
+    width: 100%;
+    height: 1200px;
+    background:#00b300;
+}
+.plantsec .cardsec .card{
+    width: 250px;
+    height: 350px;
+    border: 1px solid blue;
+    box-shadow: -4px 6px 8px darkmagenta;
+    cursor: pointer;
+    background: #ff6666;
+    text-align: center;
+  
+  
+}
+.plantsec .cardsec .card:hover:nth-child(odd){
+    transform: rotate(10deg);
+    transition: .5s ease;
+}
+.plantsec .cardsec .card:hover:nth-child(even){
+    transform: rotate(-10deg);
+    transition: .5s ease;
+}
+.plantsec .cardsec{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    row-gap:15px;
+    
+}
+.plantsec .cardsec .card img{
+  width: 100%;
+  height: 250px;  
+}
+.plantsec .cardsec .card .tit{
+    text-align: center;
+    font-size: 25px;
+    color:#a72c2c;
+    margin-bottom: 5px;
+}
+.plantsec .cardsec .card .info{
+    font-size: 15px;
+    
+}
+.plantsec .cardsec .card .btn{
+    font-size: 20px;
+    color:rgb(107, 53, 57);
+   position: absolute;
+   transform: translateY(10px);   
+  
+    border: 1px solid blue;
+    border-radius: 5px;
+      
+}
+.plantsec h1,h2{
+    text-align: center;
+    padding-bottom: 5px;
+}
+/*plant sec end*/
+
+    
+/* Ferti Section*/
+.fertisec{
+    width: 100%;
+    height: 1200px;
+    background:#4dff4d;
+}
+.fertisec .cardsec .card{
+    width: 250px;
+    height: 350px;
+    border: 1px solid blue;
+    box-shadow: 4px -6px 8px darkmagenta;
+    cursor: pointer;
+    background: #ff6666;
+    text-align: center;
+  
+  
+}
+.fertisec .cardsec .card:hover:nth-child(odd){
+    transform:scaleX(1.1);
+    transition: .5s ease;
+}
+.fertisec .cardsec .card:hover:nth-child(even){
+    transform:skew(5deg);
+    transition: .5s ease;
+}
+.fertisec .cardsec{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    row-gap:15px;
+    
+}
+.fertisec .cardsec .card img{
+  width: 100%;
+  height: 250px;  
+}
+.fertisec .cardsec .card .tit{
+    text-align: center;
+    font-size: 25px;
+    color:#a72c2c;
+    margin-bottom: 5px;
+}
+.fertisec .cardsec .card .info{
+    font-size: 15px;
+    
+}
+.fertisec .cardsec .card .btn{
+    font-size: 20px;
+    color:rgb(107, 53, 57);
+   position: absolute;
+   transform: translateY(10px);   
+  
+    border: 1px solid blue;
+    border-radius: 5px;
+      
+}
+.fertisec h1,h2{
+    text-align: center;
+    padding-bottom: 5px;
+}
+/*ferti sec end*/
+
+/*footer Sec*/
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background: #00b300 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .media{
+    margin-top: 12px;
+}
+
+.footer .media ul li{
+    display: inline-block;
+    padding-left: 20px;
+    list-style: none;
+
+}
+.footer .media ul li i{
+    font-size: 30px;
+    color: #de2114;
+    cursor: pointer;
+}
+
+.footer .media ul li i:hover{
+    color: #a72c2c;
+    text-decoration: underline;
+}
+.footer .para p{
+  font-size: 20px;
+  margin-top: 12px;
+  color:  #a72c2c;
+}
+.footer .para p span{
+    font-size: 25px;
+    color: #ff6666;
+}
+
+/*footer sec end*/
