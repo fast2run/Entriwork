@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:wght@100;300;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bgclr:#005ce6;
+}
+
+body{
+    
+   
+}
+
+/*background animatin start*/
+.wrapper{
+    font-family: 'Roboto', sans-serif;
+    background: black; 
+    overflow: hidden;
+    background: linear-gradient(180deg,rgba(2, 0,.6,1) 0%,rgba(9,9,121,1)35%,rgba(0,212,255,1)100%);
+   
+}
+.wrapper .box div{
+    width: 30px;
+    height: 30px;
+    background:transparent;
+    position: absolute;
+    border: 4px solid rgba(255,255,255,0.8);
+    opacity: 0;
+}
+.wrapper .box div:nth-child(1){
+    left:.5% ;
+    top:15%;
+    position: absolute;
+    animation: animate 10s linear infinite;
+}
+.wrapper .box div:nth-child(2){
+    right:1%;
+    top:30%;
+    position: absolute;
+    animation: animate 7s linear infinite;
+}
+.wrapper .box div:nth-child(3){
+    left:3% ;
+    top:45%;
+    position: absolute;
+    animation: animate 5s linear infinite;
+}
+.wrapper .box div:nth-child(4){
+    right:3%;
+    top:60%;
+    position: absolute;
+    animation: animate 5s linear infinite;
+}
+.wrapper .box div:nth-child(5){
+    left:.5% ;
+    top:75%;
+    position: absolute;
+    animation: animate 7s linear infinite;
+}
+.wrapper .box div:nth-child(6){
+    right:1%;
+    top:90%;
+    position: absolute;
+    animation: animate 10s linear infinite;
+}
+.wrapper .box div:nth-child(7){
+    left:.5% ;
+    top:105%;
+    position: absolute;
+    animation: animate 10s linear infinite;
+}
+.wrapper .box div:nth-child(8){
+    right:1%;
+    top:120%;
+    position: absolute;
+    animation: animate 7s linear infinite;
+}
+.wrapper .box div:nth-child(9){
+    left:3% ;
+    top:135%;
+    position: absolute;
+    animation: animate 5s linear infinite;
+}
+.wrapper .box div:nth-child(10){
+    right:3%;
+    top:150%;
+    position: absolute;
+    animation: animate 5s linear infinite;
+}
+.wrapper .box div:nth-child(11){
+    left:.5% ;
+    top:165%;
+    position: absolute;
+    animation: animate 7s linear infinite;
+}
+.wrapper .box div:nth-child(12){
+    right:1%;
+    top:180%;
+    position: absolute;
+    animation: animate 10s linear infinite;
+}
+
+
+
+/*background animatin end*/
+/* nav bar */
+header{
+   
+    width: 1200px;
+    height: 100vh;
+    background-color: var(--bgclr);
+    margin: auto;
+   
+
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: aqua;
+    width: 100%;
+    height: 75px;
+  
+    
+
+}
+header .navbar .logo{
+    color:rgb(16, 18, 18);
+    font-size: 35px;
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+header .navbar .logo:hover{
+    transform: scale(1.1);
+    transition: .5s ease;
+ 
+}
+header .navbar .logo span{
+    color:rgb(103, 42, 29);
+}
+header .navbar .menu ul li{ 
+    list-style: none;
+    display: inline-block;
+    margin-left: 105px;
+    
+}
+header .navbar .menu ul li a{
+    text-decoration: none;
+    position: relative;
+}
+
+header .navbar .menu ul li a::after{ 
+
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--bgclr);
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 1s;  
+
+}
+header .navbar .menu ul li a:hover::after{
+    width: 100%;
+}
+
+header .about{
+    display: flex;
+    gap: 2px;
+    margin: 12px;
+    padding-top: 15px;
+  
+  
+}
+header .about .lftbox{
+    width: 50%;
+    height: 500px;    
+    display: flex;
+    flex-direction: column;  
+   
+    
+}
+
+header .about .lftbox h1{    
+    font-weight: 600;
+    color:var(--bgclr);   
+    letter-spacing: 3px;
+    
+}
+header .about .lftbox h1 span{
+    color:rgb(250, 3, 93);    
+}
+
+header .about .lftbox p{
+    color: rgb(0, 255, 255);
+    font-size: 25px; 
+    padding-top: 10px;    
+}
+
+header .about .lftbox .poss{
+    position: absolute;
+    z-index: 100;
+    transform: translateY(125px);
+    padding: 15px;
+}
+header .about .lftbox img{
+   height: 550px;
+   position: absolute;
+   width: 42%;
+   border-radius: 50px;
+  
+    
+}
+
+header .about .rgtbox{
+    width: 50%;
+    height: 500px;
+   
+}
+
+
+.rgtbox h1{
+    text-align:left;   
+    color:rgb(0, 255, 255);
+    padding-bottom: 5px;
+    position: relative;
+
+}
+.rgtbox h1::after{
+    content: '';
+    width: 15%;
+    height: 4px;
+    background-color:  rgb(250, 3, 93);
+    left: 0;
+    position: absolute;
+    bottom: -6px;
+   
+
+}
+.rgtbox td,table{
+   /* border: 1px solid black;
+    border-radius: 15px; */   
+    color:rgb(23, 212, 219);
+    border-color: rgb(116, 182, 213);  
+    border-spacing: 15px; 
+    font-size: 20px;
+   
+   
+}
+
+.rgtbox td{
+    width: 30%;
+}
+.rgtbox table{
+    width: 100%;
+}
+
+
+.rgtbox table td a{
+    text-decoration: none;
+    color:rgb(23, 212, 219);
+
+}
+
+.rgtbox table tr td img{
+     
+    padding-right: 5px;
+    color:#cc0000;  
+}
+/* End nav and About */
+
+/* start Eduaciton Section*/
+.eduwrap{
+    width: 1200px;
+   height: 680px;
+    background: aqua;
+    margin: auto;
+   
+}
+.eduwrap .maintitle{
+    color:#cc0000;
+        text-align: center; 
+        position: relative;
+        padding-bottom: 5px;
+    }
+.eduwrap .maintitle::after{
+        content: '';
+        width: 20%;
+        height: 4px;
+        position: absolute;
+        background:#d11aff;
+        transform: translateX(-160% );
+        bottom: -6px;
+        
+    }
+.education{
+    display: flex;
+    padding-top: 5px;
+}
+
+
+
+.education  .sidetitle{
+    color:#d11aff;
+    display: inline-block;
+    border: none;
+    margin-left:25px ;
+  
+}
+.education .acadamic .edu-info {
+    margin: 25px 140px;
+    
+    border-left: 2px solid yellow;
+    position: relative;
+       
+    
+}
+.education .acadamic .edu-info::before {
+    content: '';
+    position: absolute;
+    transform: translateX(-11px);
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    background: aqua;
+}
+.edu-info h1,h2,h3{
+    color:#660080;
+    padding-left: 10px;
+}
+.edu-info h3{
+    color:#660080;
+
+}
+.education .skill{
+    display: flex;
+    flex-direction: column;
+}
+.skill ul{
+    list-style-type: none;
+    padding-top: 5px;
+}
+.skill ul li{
+    padding: 5px 100px;
+    font-size: 16px;
+    color: #660080;
+}
+.skill ul li img{
+    padding-right: 5px;
+
+   
+}
+
+/* End Education Section*/
+
+/*project Start*/
+.project{
+    width: 1200px;
+    height: 100vh;
+    margin:auto;
+    background: #005ce6;
+}
+.project .projmaintle{
+    text-align: center;
+    color:rgb(0, 255, 255);
+    position: relative;
+    padding-bottom: 5px;
+
+}
+.project .projmaintle::after{
+    content: '';
+    width: 10%;
+    height: 4px;
+    background-color:  rgb(250, 3, 93);  
+    position: absolute;
+    bottom: -6px;
+    transform: translateX(-170px);
+   
+}
+.project .proarea{
+    display:grid ;
+    grid-template-columns: auto auto;
+    gap:15px;
+   
+}
+.project .proarea .prodet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    box-shadow: -5px -5px 5px 5px  black;
+}
+.project .proarea .prodet .prohead{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.project .proarea .prodet{
+    width: 500px;
+    height:280px;
+    
+    text-align: center;
+    margin:10px 40px;
+    
+    
+}
+.prodet h1{
+    color:rgb(250, 106, 3);
+}
+.prodet h2,h3,p{
+color:rgb(23, 212, 219);
+}
+.prodet h3 a{
+    text-decoration: none;
+    margin-left: 15px;
+    color:rgb(250, 3, 93);
+    border: 1px solid rgb(250, 3, 93);
+}
+.prodet h3 a:hover{
+    color:rgb(250, 106, 3);
+    border: none;
+}
+/*project Ends*/
+/*Experience starts*/
+
+.experience{
+    width: 1200px;
+    height: 100vh;
+    background: aqua;
+    margin: auto;
+}
+.experience .expmaintle{
+    text-align: center;
+    color: #cc0000;
+    position: relative;
+
+}
+.experience .expmaintle::after{
+    content: '';
+    width: 10%;
+    height: 4px;
+    position: absolute;
+    background:#d11aff;
+    transform: translateX(-130% );
+    bottom: -6px;
+
+}
+.experience .expbox{
+    display: flex;
+    justify-content: space-around;
+
+}
+.experience .expbox .expleft .exp{
+    width: 500px;
+    height: 200px;
+    margin-top: 5px;
+    margin-left: 20px;
+    display: flex;
+  
+    position: relative;
+    border-left: 2px solid yellow;
+}
+.experience .expbox .expleft .exp::before{
+    content: '';
+    position: absolute;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top:0;
+    left:-10px;
+    background: aqua;
+   
+}
+.experience .expbox .expleft .exp ul li h1{
+    color:#d11aff;
+    
+
+}
+.experience .expbox .expleft .exp ul li h2{
+   color: #660080;
+   padding: 0;
+}
+.experience .expbox .expleft .exp ul{
+    list-style-type: none;
+}
+.experience .expbox .expleft .exp ul li{
+    padding: 5px 10px;
+}
+.experience .expbox .expright .exp{
+    width: 500px;
+    height: 200px;
+    
+    margin-top: 5px;
+    display: flex;
+    position: relative;
+    border-left: 2px solid yellow;
+}
+.experience .expbox .expright .exp::before{
+   content: '';
+    position: absolute;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top:0;
+    left:-10px;
+    background: aqua;
+   
+}
+.experience .expbox .expright .exp ul li h1{
+    color:#d11aff;
+    
+
+}
+.experience .expbox .expright .exp ul li h2{
+   color: #660080;
+   padding: 0;
+}
+.experience .expbox .expright .exp ul{
+    list-style-type: none;
+}
+.experience .expbox .expright .exp ul li{
+    padding: 5px 10px;
+}
+/* Expereince End */
+/*Contact start*/
+.contact{
+    width: 1200px;
+    height: 75px;
+    background:#005ce6;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact .conup ul{
+    list-style-type: none;
+    
+}
+.contact .conup ul li{
+    display: inline;
+    padding-left:125px  ;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.contact .conup ul li img{
+    width: 30px;
+    padding-right: 5px;
+    bottom: -5px;
+    position:relative;
+    cursor: pointer;
+}
+.contact .conup hr{
+    width: 80%;
+    position: relative;
+    right: -100px;
+    margin-top: 5px;
+}
+.contact .condown .end{
+    color: black;
+    text-align: center;
+}
+.contact .condown h2 span{
+    color:aqua;
+    letter-spacing: 2px;
+    
+}
+/*contact end*/
+
+
+
+
+/* Animation */
+
+
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
