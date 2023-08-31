@@ -1,0 +1,86 @@
+:root{
+    --backgrdclr : linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,222,230,1) 0%, rgba(8,166,244,1) 51%, rgba(0,121,255,1) 92%);
+    --backgrdxcon : #61158c;
+    --headclr:#fff;
+    --inclr:#fff;
+}
+
+
+*{
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: var(--backgrdclr);
+}
+
+.container{
+    max-width:450px;
+    margin:0 auto;
+    background: var(--backgrdxcon);
+}
+h1{
+    text-align: center;
+    color:var(--headclr);
+}
+h2{
+    color:var(--headclr)
+}
+#getTaskInput{
+    width: 75%;
+    height: 25px;
+    background-color: transparent;
+    color:var(--inclr);
+    margin-left: 5px;
+    border: none;
+  }
+  #getTaskInput:focus::placeholder{
+    color:transparent;
+  }
+  #getTaskInput::placeholder{
+    color:blanchedalmond;
+  }
+#getTaskBtn{
+    height: 25px;
+    width: 20%;
+    border-radius:solid 2px;
+    cursor: pointer;
+    background-color: var(--backgrdxcon);
+    color:var(--inclr)
+}
+.task{
+
+    
+}
+.inner{
+    display: flex;
+    
+}
+.task #display{
+    width: 90%;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    color:var(--inclr);
+    
+
+}
+.task #edit{
+    height: 25px;
+    width:50px;
+    margin-left: 5px;
+    background-color: var(--backgrdxcon);
+    color:var(--inclr)
+    
+}
+.task #delete{
+    height: 25px;
+    width: 50px;
+    background-color: var(--backgrdxcon);
+    color:var(--inclr)
+}
+
+ul{
+    list-style-type: none;
+}
